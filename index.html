@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casa dos eBooks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #eff6ff, white);
+      color: #1f2937;
+    }
+    .container {
+      max-width: 1024px;
+      margin: auto;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #dbeafe;
+      animation: fadeSlide 1s ease-out;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #1d4ed8;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: #374151;
+      max-width: 600px;
+      margin: auto;
+    }
+    .button {
+      margin-top: 1rem;
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .ebooks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      border: 1px solid #dbeafe;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    }
+     .card img {
+      max-height: 220px;  /* Altura máxima */
+      width: auto;         /* Mantém proporção */
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem auto;
+      border-radius: 0.5rem;
+    }
+
+
+    .card h2 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #1d4ed8;
+      margin: 0.5rem 0;
+    }
+    .card p {
+      margin: 0.25rem 0;
+      font-size: 0.95rem;
+      color: #374151;
+    }
+    .purpose {
+      text-align: center;
+      margin: 4rem auto;
+      max-width: 700px;
+      animation: fadeSlide 1s ease-out;
+    }
+    .purpose h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1d4ed8;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      padding-top: 2rem;
+      border-top: 1px solid #dbeafe;
+      margin-top: 4rem;
+      color: #6b7280;
+    }
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Casa dos eBooks</h1>
+      <p class="subtitle">
+        Dois caminhos, um propósito: praticidade para transformar sua renda ou uma jornada filosófica para transformar sua vida.
+      </p>
+      <a href="#ebooks" class="button">📚 Conheça os eBooks</a>
+    </header>
+
+    <section class="ebooks" id="ebooks">
+      <div class="card" onclick="window.open('https://www.casadosebooks.wiki.br/airbnb','_blank')">
+        <img src="capas/airbnb.png" alt="Guia Airbnb">
+        <h2>Guia Airbnb para Iniciantes</h2>
+        <p><strong>💡 Categoria:</strong> Renda Passiva / Guia Prático</p>
+        <p>Aprenda a gerar renda com seu imóvel usando estratégias acessíveis e práticas de aluguel via Airbnb.</p>
+      </div>
+
+      <div class="card" onclick="window.open('https://www.casadosebooks.wiki.br/atlas','_blank')">
+        <img src="capas/atlas.png" alt="Atlas Escolhas Invisíveis">
+        <h2>O Atlas das Escolhas Invisíveis</h2>
+        <p><strong>📖 Categoria:</strong> Ficção Filosófica / Existencial</p>
+        <p>Um romance sensível e profundo sobre decisões invisíveis, destinos alternativos e a busca por sentido.</p>
+      </div>
+    </section>
+
+    <section class="purpose">
+      <h3>Nosso Propósito</h3>
+      <p>
+        Os livros da Casa dos eBooks são feitos para expandir horizontes — seja com histórias que tocam a alma ou com guias que transformam o dia a dia. Cada título reflete nosso compromisso com conteúdo útil, inspirador e acessível.
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2025 Casa dos eBooks</p>
+      <p><a href="https://www.instagram.com/contato.casadosebooks" target="_blank">Instagram: @contato.casadosebooks</a></p>
+    </footer>
+  </div>
+</body>
+</html>
