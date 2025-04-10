@@ -4,6 +4,8 @@
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/airbnb", "destination": "/airbnb/index.html" },
-    { "source": "/atlas", "destination": "/atlas/index.html" }
+    { "source": "/airbnb/", "destination": "/airbnb/index.html" },
+    { "source": "/atlas", "destination": "/atlas/index.html" },
+    { "source": "/atlas/", "destination": "/atlas/index.html" }
   ]
 }
